@@ -12,14 +12,18 @@ void times_table(void)
 		{
 			multiply = c * m;
 			if (multiply == 0 && multiply < 10)
+			{
 				_putchar(multiply + '0');
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
+			}
 			else if (multiply >= 10)
+			{
 				_putchar(multiply + '0');
 				_putchar(',');
 				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
