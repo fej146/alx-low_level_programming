@@ -8,8 +8,8 @@ void _puts(char *str)
 {
 	int n;
 
-	for (n = 0; s[n] != '\0'; n++)
+	for (n = 0; str[n] != '\0'; n++)
 		putchar(s[n]);
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
