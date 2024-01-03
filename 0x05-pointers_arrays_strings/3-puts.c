@@ -10,5 +10,6 @@ void _puts(char *str)
 
 	for (n = 0; s[n] != '\0'; n++)
 		putchar(s[n]);
+	putchar('\n')
 	return (0);
 }
