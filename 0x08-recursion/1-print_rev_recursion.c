@@ -9,11 +9,11 @@ void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		return;
+		return; /*this if statement forms base case */
 	}
 	else
 	{
-		_print_rev_recursion(s + 1);
+		_print_rev_recursion(s + 1); /* recursive procedure*/
 		_putchar(*s);
 	}
 }
