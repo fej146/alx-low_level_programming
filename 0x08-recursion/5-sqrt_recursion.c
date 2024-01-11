@@ -5,19 +5,19 @@
  * @s: square root of number
  * Return: square root
  */
-int _sqrt(int n, int s)
+int _sqrt(int a, int s)
 {
-	if (s * s == n)
+	if (s * s == a)
 	{
 		return (s);
 	}
-	else if (s * s > n)
+	else if (s * s > a)
 	{
 		return (-1);
 	}
 	else
 	{
-		return (_sqrt(n, s + 1));
+		return (_sqrt(a, s + 1));
 	}
 }
 /**
