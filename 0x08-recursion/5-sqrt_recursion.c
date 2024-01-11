@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * sqrt - checks for the square root of a number
+ * _sqrt - checks for the square root of a number
  * @n: number
  * @s: square root of number
  * Return: square root
  */
-int sqrt(int n, int s)
+int _sqrt(int n, int s)
 {
 	if (s * s == n)
 	{
@@ -17,7 +17,8 @@ int sqrt(int n, int s)
 	}
 	else
 	{
-		return (sqrt(n, s + 1));
+		return (_sqrt(n, s + 1));
+	}
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number
@@ -32,6 +33,6 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (check(1, n));
+		return (_sqrt(1, n));
 	}
 }
