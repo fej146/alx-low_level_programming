@@ -9,38 +9,27 @@
  */
 int main(int argc, char *argv[])
 {
+	int i, n, sum = 0;
+	char *flag;
+
 	if (argc < 2)
 	{
 		/*print 0 if no argument is passed */
 		printf("0\n");
 		return (0);
 	}
-	int sum = 0;
-
-	/**
-	 * initializing 3 int
-	 * i = index for arguments
-	 * j = index for char in each argument
-	 * sum = the sum of the arguments
-	 */
-	for (int i = 1; i < argc; i++)
+	for (i = 0; argv[i] != '\0'; i++)
 	{
-		/**
-		 * check each character of the arguments for letters
-		 * if there is a letter, print Error
-		 */
-		for (int j = 0; (argv[i][j] = '\0'); j++)
+		n = strtol(agrv[i], &flag, 10)
+		if (*flag)
 		{
-			if (!isdigit(argv[i][j]))
-			{
-				printf("Error\n");
-				return (1);
-			}
+			printf("Error\n");
+			return (1);
 		}
-		sum = 0;
-
-		/*convert arguments to numbers and add them*/
-		sum += atoi(argv[i]);
+		else
+		{
+			sum += n;
+		}
 	}
 	printf("%d\n", sum);
 	return (0);
