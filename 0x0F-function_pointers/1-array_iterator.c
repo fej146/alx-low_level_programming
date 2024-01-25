@@ -24,8 +24,3 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 		}
 	}
 }
-/**
- * another way of writing same 
- * int i;
- * if (array == NULL || action == NULL)
- * /
