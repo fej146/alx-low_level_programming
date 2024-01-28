@@ -32,6 +32,6 @@ char *str_concat(char *s1, char *s2)
 		output[i] = s1[i];/*copies s1 to the address of output*/
 	for (i = 0; i < len2; i++)
 		output[len1 + 1] = s2[i];/*continues s2 from the end of s1 address*/
-	output[len1 + len2] = '\0';
+	output[len1 + len2 + 1] = '\0';
 	return (output);
 }
