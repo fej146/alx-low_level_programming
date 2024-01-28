@@ -17,10 +17,21 @@ char *str_concat(char *s1, char *s2)
 	char *output;
 
 	len1 = len2 = 0;
-	if (s1 == NULL)
-		return (NULL);
-	if (s2 == NULL)
-		return (NULL);
+
+	if (s1 != NULL)
+	{
+		i = 0;
+		while (s1[i++] != '\0')
+			len1++;
+	}
+
+	if (s2 != NULL)
+	{
+		i = 0;
+		while (s2[i++] != '\0')
+			len2++;
+	}
+
 	for (i = 0; s1[i] != '\0'; i++)/*loop for the length of s1*/
 		len1++;
 	for (i = 0; s2[i] != '\0'; i++)/*loop for string length s2*/
