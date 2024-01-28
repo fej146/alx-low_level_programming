@@ -32,10 +32,6 @@ char *str_concat(char *s1, char *s2)
 			len2++;
 	}
 
-	for (i = 0; s1[i] != '\0'; i++)/*loop for the length of s1*/
-		len1++;
-	for (i = 0; s2[i] != '\0'; i++)/*loop for string length s2*/
-		len2++;
 	output = malloc(sizeof(char) * (len1 + len2) + 1);
 	if (output == NULL)
 		return (NULL);
