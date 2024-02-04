@@ -2,10 +2,9 @@
 #include <stdlib.h>
 /**
  * new_dog - creates a new dog
- * @name: name of new dog
- * @age: age of new doge
- * @owner: owner of new dog
- * Return: pointer to new dog
+ *@name: name of new dog
+ *@age: age of new doge
+ *@owner: owner of new dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -33,7 +32,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (i = 0; i < name1; i++)
 		dog->name[i] = name[i];
 	dog->age = age;
-	for (owner1 = 0; owner[owner1] = '\0'; owner1++)
+	for (owner1 = 0; owner[owner1] != '\0'; owner1++)
 		;
 	owner1++;
 	dog->owner = malloc(owner1 * sizeof(char));
