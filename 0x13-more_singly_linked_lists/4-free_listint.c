@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * free_list - frees the memory allocated for list
+ * free_listint - frees the memory allocated for list
  * @head: pointer to the head node
  */
 void free_listint(listint_t *head)
