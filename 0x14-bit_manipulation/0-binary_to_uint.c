@@ -10,9 +10,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int i;
-	int total = 0;
-	int decimal = 1;
-	int len = strlen(b);
+	unsigned int total = 0;
 
 	if (!b)
 		return (0);
@@ -21,12 +19,12 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
 	}
-	for (int i = (len - 1); i >= 0; i--)
+	for (int i = 0; i != '0'; i++)
 	{
+		total <<= 1;
 		if (b[i] == '1')
 		{
-			total += decimal;
-			decimal *= 2;
+			total += 1;
 		}
 	return (total);
 	}
