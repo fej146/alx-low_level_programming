@@ -7,11 +7,11 @@
 void print_2(unsigned long int n)
 {
 	if (n == 0)
-		return (0);
+		return;
 	print_2(n >> 1);
 	if ((n & 1) == 1)
 		_putchar('1');
-	else if ((n & 1) == 0)
+	if ((n & 1) == 0)
 		_putchar('0');
 }
 /**
